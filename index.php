@@ -1,5 +1,5 @@
-<?php
-?>
+<!-- <?php
+?> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,9 +9,9 @@
     <title>BadWords</title>
 </head>
 <body>
-    <form action="censor.php" method="GET">
+    <form action="backpage.php" method="GET">
         <input type="text" name="text">
-        <input type="submit">
+        <button type="submit">send</button>
     </form>
 </body>
 </html>
