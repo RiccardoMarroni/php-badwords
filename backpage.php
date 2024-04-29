@@ -1,7 +1,7 @@
 <?php
-    $badWords = ['parolacce'];
+    $badWords = ['parolacce' , 'x'];
     $text = $_GET['text'];
-     $censoredText = str_replace($badWords, '***', $text);
+    //  $censoredText = str_replace($badWords, '***', $text);
     
 ?>
 
@@ -13,6 +13,6 @@
     <title>backpage</title>
 </head>
 <body>
-    <p><? echo  $censoredText ?></p>
+    <p><? echo  str_replace($badWords, '***', $text) ?></p>
 </body>
 </html>
