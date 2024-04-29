@@ -1,7 +1,7 @@
 <?php
     $badWords = ['parolacce' , 'x'];
-    $text = $_GET['text'];
-    //  $censoredText = str_replace($badWords, '***', $text);
+    $text = $_POST ['text'];
+    $censoredText = str_replace($badWords, '***', $text);
     
 ?>
 
@@ -13,6 +13,13 @@
     <title>backpage</title>
 </head>
 <body>
-    <p><? echo  str_replace($badWords, '***', $text) ?></p>
+    <div>
+        <strong>testo non censurato</strong>
+        <p><? echo $text ?></p>
+    </div>
+    <div>
+        <strong">testo censurato</strong>
+        <p><? echo  $censoredText ?></p>
+    </div>
 </body>
 </html>

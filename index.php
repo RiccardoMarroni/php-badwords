@@ -9,7 +9,7 @@
     <title>BadWords</title>
 </head>
 <body>
-    <form action="backpage.php" method="GET">
+    <form action="backpage.php" method="POST">
         <input type="text" name="text">
         <button type="submit">send</button>
     </form>
